@@ -1,7 +1,7 @@
 <?php
  try {
                 require_once 'conf.php';
-             
+                $conn = mysqlConnector();
                 $stmt = $conn->prepare('SELECT * FROM user_data ');
                 $stmt->execute();
 
